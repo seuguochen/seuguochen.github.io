@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>参与项目</title>
+<meta charset="gb2312">
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="js/cufon-yui.js"></script>
+<script type="text/javascript" src="js/FuturisExtra_400.font.js"></script>
+<script type="text/javascript" src="js/cufon-replace.js"></script>
+<script type="text/javascript" src="js/jquery.galleriffic.js"></script>
+<script type="text/javascript">
+      jQuery(document).ready(function($) {
+         // We only want these styles applied when javascript is enabled
+         $('div.navigation').css({'width' : '701px', 'float' : 'left'});
+         $('div.content-gallery').css('display', 'block');
+   
+         // Initially set opacity on thumbs and add
+         // additional styling for hover effect on thumbs
+         var onMouseOutOpacity = 0.67;
+         $('#thumbs ul.thumbs li').opacityrollover({
+            mouseOutOpacity:   onMouseOutOpacity,
+            mouseOverOpacity:  1.0,
+            fadeSpeed:         'fast',
+            exemptionSelector: '.selected'
+         });
+         
+         // Initialize Advanced Galleriffic Gallery
+         var gallery = $('#thumbs').galleriffic({
+            delay:                     2500,
+            numThumbs:                 3,
+            preloadAhead:              3,
+            enableTopPager:            true,
+            enableBottomPager:         true,
+            maxPagesToShow:            7,
+            imageContainerSel:         '#slideshow',
+            controlsContainerSel:      '#controls',
+            captionContainerSel:       '#caption',
+            loadingContainerSel:       '#loading',
+            renderSSControls:          true,
+            renderNavControls:         true,
+            playLinkText:              'Play Slideshow',
+            pauseLinkText:             'Pause Slideshow',
+            prevLinkText:              'previous',
+            nextLinkText:              'next',
+            nextPageLinkText:          'Next &rsaquo;',
+            prevPageLinkText:          '&lsaquo; Prev',
+            enableHistory:             false,
+            autoStart:                 false,
+            syncTransitions:           true,
+            defaultTransitionDuration: 900,
+            onSlideChange:             function(prevIndex, nextIndex) {
+               // 'this' refers to the gallery, which is an extension of $('#thumbs')
+               this.find('ul.thumbs').children()
+                  .eq(prevIndex).fadeTo('fast', onMouseOutOpacity).end()
+                  .eq(nextIndex).fadeTo('fast', 1.0);
+            },
+            onPageTransitionOut:       function(callback) {
+               this.fadeTo('fast', 0.0, callback);
+            },
+            onPageTransitionIn:        function() {
+               this.fadeTo('fast', 1.0);
+            }
+         });
+      });
+   </script>
+<script type="text/javascript" src="js/jquery.opacityrollover.js"></script>
+<!--[if lt IE 7]>
+     <script type="text/javascript" src="js/ie_png.js"></script>
+     <script type="text/javascript">
+     ie_png.fix('.png, #twitter, .carousel-box button.prev, .carousel-box button.next, div.nav-controls a.prev, div.nav-controls a.next');
+     </script>
+     <link href="css/ie/ie6.css" rel="stylesheet" type="text/css" />
+   <![endif]-->
+<!--[if IE]>
+      <script type="text/javascript" src="js/html5.js"></script>
+   <![endif]-->
+</head>
+<body id="page4">
+<div id="tail-top-right"></div>
+<div id="main-tail-ver">
+  <div id="main-tail-top">
+    <div id="main-bg-top">
+      <div id="main">
+        <!-- header -->
+        <div id="header-bg">
+          <header>
+            <h1><a href="index.html"><span>webstudio</span></a></h1>
+            <a href="#" id="twitter"></a> <strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp简单& 平静& 爱生活</strong> </header>
+        </div>
+        <!-- content -->
+        <div id="content-bg">
+          <section id="content">
+            <div id="indent">
+              <div class="wrapper">
+                <article id="column-left">
+                  <nav>
+                    <ul>
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="index-1.html">education</a></li>
+		      <li><a href="index-7.html">activity</a></li>
+                      <li><a href="index-2.html">honour</a></li>
+                      <li class="act"><a href="index-3.html">project</a></li>
+                      <li><a href="index-4.html">research</a></li>
+                      <li><a href="index-5.html">contacts</a></li>
+                    </ul>
+                  </nav>
+                  <div id="renren"><a href="http://www.renren.com/245819166/" target="_blank">renren.com/245819166</a></div>
+		  <div id="weibo"><a href="http://www.weibo.com/1917165575/" target="_blank">weibo.com/1917165575</a></div>
+		  <div id="wenku"><a href="http://www.baidu.com/p/guochenseu" target="_blank">baidu.com/p/guochenseu</a></div>
+                </article>
+                <article id="column-right">
+                  <div class="content-box">
+                    <div class="tail">
+                      <div class="top">
+                        <div class="bot">
+                          <div class="inner">
+                            <div class="wrapper-1">
+                              <h2>Featured Works</h2>
+                              <!-- Start Advanced Gallery Html Containers -->
+                              <div id="gallery" class="content-gallery">
+                                <div class="wrapper">
+                                  <div class="slideshow-container">
+                                    <div id="loading" class="loader"></div>
+                                    <div id="slideshow" class="slideshow"></div>
+                                  </div>
+                                  <div id="caption" class="caption-container"></div>
+                                </div>
+                              </div>
+                              <div class="wrapper">
+                                <div id="thumbs" class="navigation">
+                                  <ul class="thumbs noscript">
+                                    <li> <a class="thumb" name="leaf" href="images/gal-1-big.jpg" title="Title #0"> <img alt="" src="images/gal-1.jpg" /> </a>
+                                      <div class="caption">
+                                        <div class="work-caption">SFTP</div>
+                                        <div class="image-desc">
+                                          <p>在Linux环境下，用C语言实现的SFTP</p>
+
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li> <a class="thumb" name="leaf" href="images/gal-2-big.jpg" title="Title #0"> <img alt="" src="images/gal-2.jpg" /> </a>
+                                      <div class="caption">
+                                        <div class="work-caption">南京公交查询系统</div>
+                                        <div class="image-desc">
+                                          <p> 基于MFC的南京公交查询系统，提供线路查询，站点查询，换乘查询</p>
+                                          
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="extra"> <a class="thumb" name="leaf" href="images/gal-3-big.jpg" title="Title #0"> <img alt="" src="images/gal-3.jpg" /> </a>
+                                      <div class="caption">
+                                        <div class="work-caption">Gather SNS</div>
+                                     
+                                        <div class="image-desc">
+                                          <p>多平台微博聚合客户端 GatherSNS。<br>使用介绍:http://v.youku.com/v_show/id_XMzc3MTk5MTAw.html。iTunes<br>下载地址：http://itunes.apple.com/cn/app/gathersns/id496870217?l=en&mt=8。</p>
+                                          
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li> <a class="thumb" name="leaf" href="images/gal-4-big.jpg" title="Title #0"> <img alt="" src="images/gal-4.jpg" /> </a>
+                                      <div class="caption">
+                                        <div class="work-caption">Web服务组合</div>
+
+                                        <div class="image-desc">
+                                          <p>使用基于模板的Web服务组合技术，实现跨平台的旅游服务组合</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li> <a class="thumb" name="leaf" href="images/gal-5-big.jpg" title="Title #0"> <img alt="" src="images/gal-5.jpg" /> </a>
+                                      <div class="caption">
+                                        <div class="work-caption">校团委网站的维护与再开发</div>
+                                        <div class="image-desc">
+                                          <p>参与共青团东南大学委员会网站的日常维护与开发升级。<br>http://youth.seu.edu.cn</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                    <li class="extra"> <a class="thumb" name="leaf" href="images/gal-6-big.jpg" title="Title #0"> <img alt="" src="images/gal-6.jpg" /> </a>
+                                      <div class="caption">
+                                        <div class="work-caption">智慧园区规划</div>
+ 
+                                        <div class="image-desc">
+                                          <p>实验室与常州营特信息科技有限公司合作，参与常州武进绿色建筑产业集聚示范区智慧园区规划</p>
+                                        </div>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div id="controls"></div>
+                              <!-- END Advanced Gallery Html Containers -->
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+        <!-- footer -->
+        <div id="footer-tail">
+          <footer>
+            <div class="inner">
+              <div class="wrapper">
+                <div class="block-1">
+                  <dl class="list-1">
+                    <dt>Web Studio &copy; 2010</dt>
+                    <dd><a href="index-6.html">Privacy policy</a></dd>
+                  </dl>
+                  <p>
+                    <!-- {%FOOTER_LINK} -->
+                  </p>
+                </div>
+                <div class="block-2">
+                  <dl class="list-1">
+                    <dt>Company</dt>
+                    <dd><a href="#">About</a></dd>
+                    <dd><a href="#">Contact us</a></dd>
+                  </dl>
+                </div>
+                <div class="block-3">
+                  <dl class="list-1">
+                    <dt>Why us</dt>
+                    <dd><a href="#">Our Clients</a></dd>
+                    <dd><a href="#">Technology</a></dd>
+                    <dd><a href="#">Web Labs</a></dd>
+                  </dl>
+                </div>
+                <div class="block-4">
+                  <dl class="list-1">
+                    <dt>Support</dt>
+                    <dd><a href="#">Account Center Login</a></dd>
+                    <dd><a href="#">System Status</a></dd>
+                  </dl>
+                </div>
+                <div class="block-5">
+                  <form action="" id="subscribe-form">
+                    <div class="wrapper"> <strong>Newsletter Signup</strong>
+                      <input type="submit" value="" id="subscribe-submit">
+                      <input type="text"  value="enter your e-mail here" onBlur="if(this.value=='') this.value='enter your e-mail here'" onFocus="if(this.value =='enter your e-mail here' ) this.value=''">
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
