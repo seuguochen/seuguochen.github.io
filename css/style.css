@@ -304,7 +304,7 @@ nav {
 	}
 
 #weibo {
-	background: url(../images/微博.jpg) no-repeat 2px 0%;
+	background: url(../images/weibo.jpg) no-repeat 2px 0%;
 	padding: 42px 0 0 0;
 	line-height: 1.2em;
 	letter-spacing: -1px;
@@ -322,7 +322,7 @@ nav {
 	}
 
 #renren {
-	background: url(../images/人人.jpg) no-repeat 2px 0%;
+	background: url(../images/renren.jpg) no-repeat 2px 0%;
 	padding: 42px 0 0 0;
 	line-height: 1.2em;
 	letter-spacing: -1px;
@@ -339,7 +339,7 @@ nav {
 		margin: -6px 0 0 0;
 	}
 #wenku {
-	background: url(../images/百度文库.jpg) no-repeat 2px 0%;
+	background: url(../images/wenku.jpg) no-repeat 2px 0%;
 	padding: 42px 0 0 0;
 	line-height: 1.2em;
 	letter-spacing: -1px;
